@@ -10,7 +10,12 @@ namespace testSwagger.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+        
+        /// <summary>
+        /// Retrieve the employee by their ID.
+        /// </summary>
+        /// <param name="id">The ID of the desired Employee</param>
+        /// <returns>A string status</returns>
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
